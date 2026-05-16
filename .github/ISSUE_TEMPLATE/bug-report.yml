@@ -17,7 +17,7 @@ body:
       required: true
     attributes:
       label: ✏️ Description
-      description: Explain the issue, including the text of any window alerts or things of note.
+      description: Explain the bug, including the text of any window alerts or things of note.
 
   - type: textarea
     id: consoleMessages
@@ -35,14 +35,6 @@ body:
     attributes:
       label: 🐰 quiCKIE Version
       placeholder: quiCKIE [v1.5]
-
-  - type: input
-    id: clientVersion
-    validations:
-      required: false
-    attributes:
-      label: 🖥️ Torrent Client
-      placeholder: qui [v1.18] and qBitTorrent [v5.1.4]
 
   - type: input
     id: userBrowser
@@ -65,10 +57,26 @@ body:
         - Greasemonkey
         - Other
 
-  - type: checkboxes
-    id: userConfirmation
+  - type: input
+    id: torrentClient
+    validations:
+      required: false
     attributes:
-      label: Confirm New Issue
+      label: 🖥️ Torrent Client
+      placeholder: qui [v1.18] and qBitTorrent [v5.1.4]
+
+  - type: checkboxes
+    id: troubleshootingChecks
+    attributes:
+      label: Troubleshooting Checks
+      options:
+        - label: I have tried using a different browser and can still reproduce the bug
+        - label: I have tried using a different userscript manager and can still reproduce the bug
+
+  - type: checkboxes
+    id: issueConfirmation
+    attributes:
+      label: Confirm New Bug Report
       options:
         - label: If this bug is related to a particular private tracker, I am willing to help with some testing or HTML inspections to get it fixed
         - label: Yes, I can reproduce this bug even after disabling other UserScripts\programs that may cause interference
