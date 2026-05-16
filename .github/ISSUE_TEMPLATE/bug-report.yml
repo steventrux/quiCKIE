@@ -70,8 +70,9 @@ body:
     attributes:
       label: Troubleshooting Checks
       options:
-        - label: I have tried using a different browser and can still reproduce the bug
-        - label: I have tried using a different userscript manager and can still reproduce the bug
+        - label: I have tried a different tracker and can still reproduce the bug
+        - label: I have tried a different UserScript Manager and can still reproduce the bug
+        - label: I have tried a different browser and can still reproduce the bug
 
   - type: checkboxes
     id: issueConfirmation
