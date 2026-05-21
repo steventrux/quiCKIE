@@ -18,6 +18,7 @@
 
 // Adding a New Tracker: https://github.com/WirlyWirly/quiCKIE/wiki/Adding-a-New-Tracker
 
+// @match   https://aither.cc
 // @match   https://aither.cc/*/bookmarks*
 // @match   https://aither.cc/playlists/*
 // @match   https://aither.cc/torrents*
@@ -146,6 +147,11 @@
 // @match   https://lat-team.com/*/bookmarks
 // @match   https://lat-team.com/playlists/*
 // @match   https://lat-team.com/torrents*
+
+// @match   https://lst.gg
+// @match   https://lst.gg/*/bookmarks*
+// @match   https://lst.gg/playlists/*
+// @match   https://lst.gg/torrents*
 
 // @match   https://luminarr.me/
 // @match   https://luminarr.me/*/bookmarks
@@ -437,6 +443,12 @@ const settingsPanelTrackers = [
         trackerName: 'Lat-Team',
         homepageURL: 'https://lat-team.com',
         primaryDomain: 'lat-team',
+    },
+
+    {
+        trackerName: 'LST', //@LilithOfTheValley
+        homepageURL: 'https://lst.gg',
+        primaryDomain: 'lst',
     },
 
     {
@@ -1285,7 +1297,13 @@ if ( primaryDomain == 'animebytes' ) {
     // Bookmarks | Browse | Details | Homepage | Playlists
 
     unit3dTrackerHandler('a[href^="https://lat-team.com/torrents/download"]')
+    
+} else if ( primaryDomain == 'lst' ) {
+    // ----------------------------------- LST -----------------------------------
+    // Bookmarks | Browse | Details | Homepage | Playlists | MediaHub
 
+    unit3dTrackerHandler('a[href^="https://lst.gg/torrents/download"]')
+    
 } else if ( primaryDomain == 'luminarr' ) {
     // ----------------------------------- Luminarr -----------------------------------
     // Bookmarks | Browse | Details | Playlists
