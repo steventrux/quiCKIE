@@ -170,6 +170,7 @@
 // @match   https://www.myanonamouse.net/stats/top10Tor.php*
 // @match   https://www.myanonamouse.net/t/*
 // @match   https://www.myanonamouse.net/tor/browse.php*
+// @match   https://www.myanonamouse.net/tor/search.php*
 
 // @match   https://nebulance.io/bookmarks.php*
 // @match   https://nebulance.io/top10.php*
