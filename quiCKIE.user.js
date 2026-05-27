@@ -18,7 +18,7 @@
 
 // Adding a New Tracker: https://github.com/WirlyWirly/quiCKIE/wiki/Adding-a-New-Tracker
 
-// @match   https://aither.cc
+// @match   https://aither.cc/
 // @match   https://aither.cc/*/bookmarks*
 // @match   https://aither.cc/playlists/*
 // @match   https://aither.cc/torrents*
@@ -148,7 +148,7 @@
 // @match   https://lat-team.com/playlists/*
 // @match   https://lat-team.com/torrents*
 
-// @match   https://lst.gg
+// @match   https://lst.gg/
 // @match   https://lst.gg/*/bookmarks*
 // @match   https://lst.gg/playlists/*
 // @match   https://lst.gg/torrents*
