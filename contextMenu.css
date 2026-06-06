@@ -71,7 +71,7 @@
   width: 100%;
   -webkit-animation: menuItemAnimation 0.2s 0s both;
           animation: menuItemAnimation 0.2s 0s both;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto Condensed", "Inter", sans-serif;
   cursor: pointer;
 }
 .contextMenu-button:not([data-divider]):hover {
