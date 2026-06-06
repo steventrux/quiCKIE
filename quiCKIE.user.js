@@ -1601,10 +1601,6 @@ if ( primaryDomain == 'animebytes' ) {
         elementsSeparator: ' ',
     }
 
-    if ( pageURL.match(/index\.php\?page=torrents/) ) {
-        trackerHandlingOptions.enablePaginationLooping = true
-    }
-
     quickieTrackerHandler(trackerHandlingOptions)
 
         
