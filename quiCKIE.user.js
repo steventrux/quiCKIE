@@ -1068,7 +1068,7 @@ if ( primaryDomain == 'animebytes' ) {
             border: 1px solid transparent;
             color: #e8e6e3;
             display: inline-block;
-            font-family: 'Roboto';
+            font-family: 'Roboto Condensed';
             font-size: .8203125rem;
             font-weight: 400
             line-height: 1;
@@ -1388,7 +1388,7 @@ if ( primaryDomain == 'animebytes' ) {
             bunnyButtonText: '🐰',
             seedingStatusSelector: "downloadElement.closest('tr').querySelector('div.browseAct').textContent.match(/Recently Seeding/i)",
             snatchedStatusSelector: "downloadElement.closest('tr').querySelector('div.browseInact')",
-            freeleechStatusSelector: `downloadElement.closest('tr').querySelector('a[href$="&fl"][title*="Download"]') == null`, // There is no FL Wedge button, so this torrent must already be FL
+            freeleechStatusSelector: `downloadElement.closest('tr').querySelector('img[alt^="VIP"], img[alt="freeleech"], span[title="personal freeleech"]')`,
             afterBunnyButtonCreation: function(elements) {
                 // The actions to take after the bunnyButtons have been created...
 
