@@ -219,6 +219,9 @@
 // @match   https://secret-cinema.pw/top10.php*
 // @match   https://secret-cinema.pw/torrents.php*
 
+// @match   https://sportscult.org/index.php?page=torrents*
+// @match   https://sportscult.org/index.php?page=torrent-details*
+
 // @match   https://thegeeks.click/browse.php*
 // @match   https://thegeeks.click/details.php?id=*
 
@@ -534,6 +537,12 @@ const settingsPanelTrackers = [
         trackerName: 'Secret-Cinema', // @tartuffe
         homepageURL: 'https://secret-cinema.pw',
         primaryDomain: 'secret-cinema',
+    },
+
+    {
+        trackerName: 'SportsCult', // @steventrux
+        homepageURL: 'https://sportscult.org',
+        primaryDomain: 'sportscult',
     },
 
     {
@@ -1578,6 +1587,18 @@ if ( primaryDomain == 'animebytes' ) {
 
     let trackerHandlingOptions = {
         downloadElementsSelector: 'a[href^="torrents.php?action=download&id="]',
+    }
+
+    quickieTrackerHandler(trackerHandlingOptions)
+
+} else if ( primaryDomain == 'sportscult' ) {
+    // ----------------------------------- SportsCult -----------------------------------
+    // Browse | Details
+
+    let trackerHandlingOptions = {
+        downloadElementsSelector: 'a[href^="download.php?id="], a[href^="https://sportscult.org/download.php?id="]',
+        bunnyButtonFontSize: '140%',
+        elementsSeparator: ' ',
     }
 
     quickieTrackerHandler(trackerHandlingOptions)
