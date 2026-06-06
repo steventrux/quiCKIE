@@ -220,6 +220,7 @@
 // @match   https://secret-cinema.pw/torrents.php*
 
 // @match   https://sportscult.org/index.php?page=torrents*
+// @match   https://sportscult.org/index.php?page=torrent-details*
 
 // @match   https://thegeeks.click/browse.php*
 // @match   https://thegeeks.click/details.php?id=*
@@ -1592,7 +1593,7 @@ if ( primaryDomain == 'animebytes' ) {
 
 } else if ( primaryDomain == 'sportscult' ) {
     // ----------------------------------- SportCult -----------------------------------
-    // Browse
+    // Browse | Details
     // xbtit 3.5.1 based tracker
 
     let trackerHandlingOptions = {
