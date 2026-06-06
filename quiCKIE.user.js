@@ -540,7 +540,7 @@ const settingsPanelTrackers = [
     },
 
     {
-        trackerName: 'SportCult', // @steventrux
+        trackerName: 'SportsCult', // @steventrux
         homepageURL: 'https://sportscult.org',
         primaryDomain: 'sportscult',
     },
@@ -1592,9 +1592,8 @@ if ( primaryDomain == 'animebytes' ) {
     quickieTrackerHandler(trackerHandlingOptions)
 
 } else if ( primaryDomain == 'sportscult' ) {
-    // ----------------------------------- SportCult -----------------------------------
+    // ----------------------------------- SportsCult -----------------------------------
     // Browse | Details
-    // xbtit 3.5.1 based tracker
 
     let trackerHandlingOptions = {
         downloadElementsSelector: 'a[href^="download.php?id="], a[href^="https://sportscult.org/download.php?id="]',
@@ -1603,7 +1602,7 @@ if ( primaryDomain == 'animebytes' ) {
     }
 
     quickieTrackerHandler(trackerHandlingOptions)
-        
+
 } else if ( primaryDomain == 'thegeeks' ) {
     // ----------------------------------- TheGeeks -----------------------------------
     // Browse | Details
